@@ -705,7 +705,7 @@
                     <!-- <p class="text-header" style="font-size: 2.5em; font-weight: bold; margin-bottom: 10px;">
                         Demonstration of the WorldScore Metrics
                     </p> -->
-                    <p class="text-header"">
+                    <p class="text-header">
                         Overview
                     </p>
                     <div class="teaser-item">
@@ -899,7 +899,7 @@
                         Distribution
                     </p>
                     <p>
-                        <i>How far is the generative distribution from the data distribution?</i> We evaluate distributional closeness across both videos and trajectories, capturing complementary perspectives from visual perception and robotics.
+                        <i><b>How far is the generative distribution from the data distribution?</b></i> We evaluate distributional closeness across both videos and trajectories, capturing complementary perspectives from visual perception and robotics.
                     </p>
                     <div class="metric-buttons" style="text-align: center; margin: 20px 0;">
                         <button class="metric-button active" data-metric="FVD">Fréchet Video Distance (FVD)</button>
@@ -1086,7 +1086,7 @@
                         Quality
                     </p>
                     <p>
-                        <i>How good are the generated videos and trajectories?</i> To evaluate the fidelity of generated videos and
+                        <i><b>How good are the generated videos and trajectories?</b></i> To evaluate the fidelity of generated videos and
                             trajectories in driving scenarios, we propose a comprehensive quality suite covering three aspects:
                             subjective image quality, objective image quality, and trajectory quality.
                     </p>
@@ -1107,38 +1107,37 @@
         </div>
 
         <!-- 3D Consistency Content -->
-        <!-- <div class="quality-content" id="sub_img_q-content">
+        <div class="quality-content" id="sub_img_q-content">
             <div class="container slider-nav-interactive">
                 <div class="container nav-item">
-                    <img data-lazy="assets/images/quality/3D_consistency/3.jpg">
-                    <p>Seaside Dining...</p>
+                    <img data-lazy="assets/videos/sub_q/london.png">
+                    <p>The camera continues to face forward as the vehicle drives along the street. Pedestrians cross the zebra crossing, and vehicles, including a red bus and a white van, pass by. The scene remains dynamic with ongoing traffic and pedestrian activity....</p>
                 </div>
-                <div class="container nav-item">
+                <!-- <div class="container nav-item">
                     <img data-lazy="assets/images/quality/3D_consistency/1.jpg">
                     <p>Urban Intersection...</p>
                 </div>
                 <div class="container nav-item">
                     <img data-lazy="assets/images/quality/3D_consistency/2.jpg">
                     <p>A vintage truck...</p>
-                </div>
-                
+                </div> -->
             </div>
             <div class="container slider-for-interactive">
                 <div class="container interactive-container">
                     <div class="interactive-item">
                         <div class="score-container">
-                            <span class="score-left">Score: 92.88</span>
-                            <span class="score-right">Score: 0.00</span>
+                            <span class="score-left">Score: 0.5932</span>
+                            <span class="score-right">Score: 0.4779</span>
                         </div>
                         <video muted controls loop playsinline webkit-playsinline>
-                            <source src="assets/videos/quality/3D_consistency/3.mp4" type="video/mp4">
+                            <source src="assets/videos/sub_q/sub_q_out_1.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
                 <div class="container interactive-container">
                     <div class="interactive-item">
                         <div class="score-container">
-                            <span class="score-left">Score: 94.60</span>
+                            <span class="score-left">Score: 0.5932</span>
                             <span class="score-right">Score: 0.00</span>
                         </div>
                         <video muted controls loop playsinline webkit-playsinline>
@@ -1159,33 +1158,33 @@
                 </div>
                 
             </div>
-        </div> -->
+        </div>
 
         <!-- Subjective Consistency Content -->
-        <!-- <div class="quality-content" id="obj_img_q-content" style="display: none;">
+        <div class="quality-content" id="obj_img_q-content" style="display: none;">
             <div class="container slider-nav-interactive">
                 <div class="container nav-item">
-                    <img data-lazy="assets/images/quality/subjective_quality/1.jpg">
-                    <p>A bright Modern Kitchen...</p>
+                    <img data-lazy="assets/videos/obj_q/ottawa_3.png">
+                    <p>The vehicle continues to drive forward, maintaining its lane. The camera captures the road ahead, showing other vehicles and streetlights. The fog remains dense, obscuring visibility slightly....</p>
                 </div>
-                <div class="container nav-item">
+                <!-- <div class="container nav-item">
                     <img data-lazy="assets/images/quality/subjective_quality/2.jpg">
                     <p>Clothing Store Interior...</p>
                 </div>
                 <div class="container nav-item">
                     <img data-lazy="assets/images/quality/subjective_quality/3.jpg">
                     <p>Mountain Monastery...</p>
-                </div>
+                </div> -->
             </div>
             <div class="container slider-for-interactive">
                 <div class="container interactive-container">
                     <div class="interactive-item">
                         <div class="score-container">
-                            <span class="score-left">Score: 100.00</span>
-                            <span class="score-right">Score: 25.27</span>
+                            <span class="score-left">Score: 1.0</span>
+                            <span class="score-right">Score: 0.0</span>
                         </div>
                         <video muted controls loop playsinline webkit-playsinline>
-                            <source data-lazy="assets/videos/quality/subjective_quality/1.mp4" type="video/mp4">
+                            <source data-lazy="assets/videos/obj_q/obj_q_out_1.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
@@ -1212,7 +1211,7 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
 
         <!-- Style Consistency Content -->
         <!-- <div class="quality-content" id="traj_q-content" style="display: none;">
@@ -1345,7 +1344,7 @@
                         Temporal Consistency
                     </p>
                     <p>
-                        <i>How temporally consistent is the generated world?</i> We assess the temporal consistency of both
+                        <i><b>How temporally consistent is the generated world?</b></i> We assess the temporal consistency of both
                             videos and trajectories. For videos, we evaluate scene-level consistency, agent-level consistency, and
                             explicitly emphasize abnormal agent disappearance. For trajectories, we measure the consistency of
                             speed and acceleration over time.
@@ -1367,13 +1366,13 @@
         </div>
 
         <!--     Content -->
-        <!-- <div class="dynamics-content" id="v_consis-content">
+        <div class="dynamics-content" id="v_consis-content">
             <div class="container slider-nav-interactive">
                 <div class="container nav-item">
-                    <img data-lazy="assets/images/dynamics/motion_accuracy/1.jpg">
-                    <p>The octopus moves gracefully across the sandy ocean floor by extending and retracting its tentacles...</p>
+                    <img data-lazy="assets/videos/v_consis/calgary_2.png">
+                    <p>The vehicle will continue driving forward, following the green traffic light. The camera will capture the road ahead, showing other vehicles and pedestrians as they move through the intersection. The sky will remain partly cloudy, and the sunset colors will gradually change as the day progresses....</p>
                 </div>
-                <div class="container nav-item">
+                <!-- <div class="container nav-item">
                     <img data-lazy="assets/images/dynamics/motion_accuracy/2.jpg">
                     <p>Water gently flows, creating subtle ripples on its surface.</p>
                 </div>
@@ -1384,17 +1383,17 @@
                 <div class="container nav-item">
                     <img data-lazy="assets/images/dynamics/motion_accuracy/4.jpg">
                     <p>The turtle slowly crawls forward into the water. The fish swims smoothly beneath the surface...</p>
-                </div>
+                </div> -->
             </div>
             <div class="container slider-for-interactive">
                 <div class="container interactive-container">
                     <div class="interactive-item">
                         <div class="score-container">
-                            <span class="score-left">Score: 100.00</span>
-                            <span class="score-right">Score: 0.00</span>
+                            <span class="score-left">Score: 0.7186</span>
+                            <span class="score-right">Score: 0.5810</span>
                         </div>
                         <video muted controls loop playsinline webkit-playsinline>
-                            <source src="assets/videos/dynamics/motion_accuracy/1.mp4" type="video/mp4">
+                            <source src="assets/videos/v_consis/v_consis_out_1.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
@@ -1432,16 +1431,16 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
 
         <!-- Motion Smoothness Content -->
-        <!-- <div class="dynamics-content" id="a_consis-content" style="display: none;">
+        <div class="dynamics-content" id="a_consis-content" style="display: none;">
             <div class="container slider-nav-interactive">
                 <div class="container nav-item">
-                    <img data-lazy="assets/images/dynamics/motion_smoothness/1.jpg">
-                    <p>The panda gently shifts its weight from side to side as it climbs...</p>
+                    <img data-lazy="assets/videos/a_consis/melbourne_5.png">
+                    <p>The camera continues to capture the view of the busy street as vehicles move forward. The traffic light changes, allowing cars to proceed through the intersection. Pedestrians cross the street at designated crosswalks. The camera remains steady, focusing on the urban environment with its mix of modern high-rise buildings and older brick structures....</p>
                 </div>
-                <div class="container nav-item">
+                <!-- <div class="container nav-item">
                     <img data-lazy="assets/images/dynamics/motion_smoothness/2.jpg">
                     <p>The large potted plant next to the desk sways gently side to side as if moved by a breeze...</p>
                 </div>
@@ -1456,17 +1455,17 @@
                 <div class="container nav-item">
                     <img data-lazy="assets/images/dynamics/motion_smoothness/5.jpg">
                     <p>The car moves steadily across the snow-covered terrain, leaving deep tracks behind it as it navigates icy landscape.</p>
-                </div>
+                </div> -->
             </div>
             <div class="container slider-for-interactive">
                 <div class="container interactive-container">
                     <div class="interactive-item">
                         <div class="score-container">
-                            <span class="score-left">Score: 90.44</span>
-                            <span class="score-right">Score: 13.92</span>
+                            <span class="score-left">Score: 0.7416</span>
+                            <span class="score-right">Score: 0.4269</span>
                         </div>
                         <video muted controls loop playsinline webkit-playsinline>
-                            <source data-lazy="assets/videos/dynamics/motion_smoothness/1.mp4" type="video/mp4">
+                            <source data-lazy="assets/videos/a_consis/a_consis_out_1.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
@@ -1515,33 +1514,33 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
 
         <!-- Motion Magnitude Content -->
-        <!-- <div class="dynamics-content" id="disappearance-content" style="display: none;">
+        <div class="dynamics-content" id="disappearance-content" style="display: none;">
             <div class="container slider-nav-interactive">
                 <div class="container nav-item">
-                    <img data-lazy="assets/images/dynamics/motion_magnitude/1.jpg">
-                    <p>The sea turtle glides smoothly through the water, propelling itself forward with slow, graceful movements...</p>
+                    <img data-lazy="assets/videos/a_missing/kyoto_4.png">
+                    <p>The camera will continue to capture the scene as the vehicle drives forward. Pedestrians will cross the street at the crosswalk, and the traffic light will change from red to green. Snowflakes will continue to fall, creating a wintry atmosphere....</p>
                 </div>
-                <div class="container nav-item">
+                <!-- <div class="container nav-item">
                     <img data-lazy="assets/images/dynamics/motion_magnitude/2.jpg">
                     <p>The rocket blasts upwards into the sky, propelled by powerful thrust from its engines. The clouds of smoke billow outward rapidly...</p>
                 </div>
                 <div class="container nav-item">
                     <img data-lazy="assets/images/dynamics/motion_magnitude/3.jpg">
                     <p>The octopus glides smoothly through the shallow water, its tentacles undulating gently to propel it forward.</p>
-                </div>
+                </div> -->
             </div>
             <div class="container slider-for-interactive">
                 <div class="container interactive-container">
                     <div class="interactive-item">
                         <div class="score-container">
-                            <span class="score-left">Score: 100.00</span>
-                            <span class="score-right">Score: 37.84</span>
+                            <span class="score-left">Score: 1.0</span>
+                            <span class="score-right">Score: 0.0</span>
                         </div>
                         <video muted controls loop playsinline webkit-playsinline>
-                            <source data-lazy="assets/videos/dynamics/motion_magnitude/1.mp4" type="video/mp4">
+                            <source data-lazy="assets/videos/a_missing/a_missing_out_1.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
@@ -1568,7 +1567,7 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
 
         <!-- Object Control Content -->
         <!-- <div class="metric-content" id="traj_consis-content" style="display: none;">
